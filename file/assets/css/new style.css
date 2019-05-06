@@ -509,7 +509,7 @@ h1 span {
 
 /*for placeholder changes*/
 
-input::-webkit-input-placeholder {
+input::-kit-input-placeholder {
     color: #ddd;
 }
 input::-moz-placeholder {
@@ -1141,7 +1141,9 @@ button.btn-md:hover {
     border: 0px solid #f4720a;
 }
 .portfolio .toolbar{
-    margin-bottom:50px;
+    margin: 50px auto;
+    align-content: center;
+    /* margin-bottom:50px; */
 }
 #portfoliowork {  
     margin: 1rem 0;
@@ -1184,11 +1186,12 @@ button.btn-md:hover {
 .grid_item_overlay{
     position: absolute;
     left:10%;
-    top:10%;
+    top:50%;
+    bottom: 40%;
     width:80%;
-    height: 80%;
-    background: rgba(255, 114, 0, 0.75);
-    color:#fff;
+    height: 30%;
+    /* background: rgb(232, 240, 231); */
+    color:rgb(255, 255, 255);
     padding: 20px;
     opacity: 0;
     transition: 0.6s;
@@ -1197,11 +1200,13 @@ button.btn-md:hover {
     z-index: 99;
 }
 .g_overlay_1{
-    padding-top:16%;
+    /* filter: blur(3px); */
+    padding-top: 20%;
 }
 .g_overlay_2{
-    padding-top: 85%;
+    padding-top: 5%;
 }
+
 /*.grid_item_overlay h4{
     margin-bottom:0;
     margin-top:40px;  
