@@ -2369,6 +2369,17 @@
 
 /* Section/Article */
 
+		/* for submit buttons */
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			border-radius: 25px;
+			background-color: #d82149;
+			color: #ffffff !important;
+		}
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -2746,179 +2757,6 @@
 
 		}
 
-/* Menu */
-
-	/* .navPanelToggle {
-		text-decoration: none;
-		text-decoration: none;
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		display: none;
-	}
-
-		.navPanelToggle:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.navPanelToggle {
-				display: block;
-			}
-
-		}
-
-		.navPanelToggle *:before {
-			background: rgba(144, 144, 144, 0.65);
-			border-radius: 4px;
-			color: #fff;
-			display: block;
-			font-size: 16px;
-			height: 2.25em;
-			left: 0.5em;
-			line-height: 2.25em;
-			position: absolute;
-			text-align: center;
-			top: 0.5em;
-			width: 3.5em;
-		}
-
-	#navPanel {
-		-moz-transform: translateX(-20em);
-		-webkit-transform: translateX(-20em);
-		-ms-transform: translateX(-20em);
-		transform: translateX(-20em);
-		-moz-transition: -moz-transform 0.5s ease, visibility 0.5s;
-		-webkit-transition: -webkit-transform 0.5s ease, visibility 0.5s;
-		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
-		transition: transform 0.5s ease, visibility 0.5s;
-		-webkit-overflow-scrolling: touch;
-		visibility: hidden;
-		overflow-y: auto;
-		position: fixed;
-		left: 0;
-		top: 0;
-		background: #222;
-		color: #fff;
-		height: 100%;
-		max-width: 80%;
-		width: 20em;
-		padding: 0.5em 1.25em;
-		text-transform: uppercase;
-	}
-
-		#navPanel ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-			#navPanel ul li {
-				padding: 0;
-			}
-
-				#navPanel ul li:first-child a:not(.button), #navPanel ul li:first-child span:not(.button) {
-					border-top: 0;
-				}
-
-				#navPanel ul li a:not(.button),
-				#navPanel ul li span:not(.button) {
-					border-top: solid 1px #555;
-					color: #fff;
-					display: block;
-					padding: 0.75em 0;
-					text-decoration: none;
-				}
-
-		#navPanel .button {
-			width: 100%;
-		}
-
-		#navPanel .close {
-			text-decoration: none;
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
-			-webkit-tap-highlight-color: transparent;
-			border: 0;
-			color: #484848;
-			cursor: pointer;
-			display: block;
-			height: 4em;
-			padding-right: 1.25em;
-			position: absolute;
-			right: 0;
-			text-align: right;
-			top: 0;
-			vertical-align: middle;
-			width: 5em;
-		}
-
-			#navPanel .close:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-			}
-
-			#navPanel .close:before {
-				content: '\f00d';
-				width: 3em;
-				height: 3em;
-				line-height: 3em;
-				display: block;
-				position: absolute;
-				right: 0;
-				top: 0;
-				text-align: center;
-			}
-
-			#navPanel .close:hover {
-				color: inherit;
-			}
-
-			@media screen .fa-instagram{
-			color: rgb(44, 101, 167);
-		}(max-width: 736px) {
-
-				#navPanel .fa-instagram{
-			color: rgb(44, 101, 167);
-		}se {
-					height.fa-instagram{
-			color: rgb(44, 101, 167);
-		}m;
-					line-h.fa-instagram{
-			color: rgb(44, 101, 167);
-		}t: 4em;
-				}
-
-			}
-
-		#navPanel.visible {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
-			visibility: visible;
-		} */
-
-		/* my icture  */
-
-		
-
-
 
 /* Banner */
 
@@ -3041,18 +2879,29 @@
 
 		}
 
+
+ /* form section */
+		.form-sec{
+			/* margin: 10px auto; */
+			padding: 10px;
+			background-color: #e6dcd3cb;
+		}
+
+
+
+
 /* Footer */
 
 	#footer {
 		padding: 8em 0 6em 0;
-		background: rgba(187, 165, 206, 0.932);
-		color: #aaa;
+		background: rgba(22, 1, 1, 0.966);
+		/* color: rgb(231, 213, 213); */
 		text-align: center;
 	}
 	.connect{
 		margin: 10px auto;
 		padding: 10px;
-		color: rgb(247, 9, 9);
+		/* color: rgb(32, 5, 5); */
 		/* text-decoration-line: underline; */
 	}
 
@@ -3087,7 +2936,7 @@
 		
 		
 		.fa-github{
-			color: black;
+			color: rgb(255, 255, 255);
 		}
 		
 		.fa-facebook:hover,
@@ -3098,7 +2947,7 @@
 			color: #d5d5d5;
 		}
 		.name{
-			color: black;
+			color: rgb(243, 243, 243);
 		}
 
 

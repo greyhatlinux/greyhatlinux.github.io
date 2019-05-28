@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>myPortFolio</title>
@@ -11,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="shortcut icon" type="icon/jpg" href="images/icon.jpg">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body class="landing">
 
@@ -35,13 +33,13 @@
 							<div class="6u 12u$(medium)">
 								<header class="major">
 										<div class="image rounded propic"><img src="images/mypic1.jpg" alt="" /></div>
-										<h2>A Brief Introduction</h4>
+										<h2>A Brief Introduction</h2>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
 								<p>Born and brought up in Bokaro Steel City, a small town gentleman carrying lots of aspirations and dreams. Raised in a simple society I rarely got the chance to behold the technological advancements. Fortunately, Internet came for rescue, and opened doors to knowledge and the hapennings around the world.
 								</p>
-								<p>The way the the world is witnessing an unprecedented growth in technology and digital infrastructure is really appreciable. Amid the fast paced world, I envision a secure and well structured digital environmnet, where one can be absolutely sure of where and how his data is flowing.
+								<p>The way the the world is witnessing an unprecedented growth in technology and digital infrastructure is really appreciable.Amid the fast paced world, I envision a secure and well structured digital environmnet, where one can be absolutely sure of where and how his data is flowing.
 								</p>
 							</div>
 						</div>
@@ -91,7 +89,7 @@
 										
 									</header>
 									<b>
-											<li>MERN developer</li>
+											<li>REACT developer</li>
 											<li>Embedded Electronics</li>
 											<li>Coding in Python and C++</li>
 											<li>Networking and Cyber Security</li>
@@ -123,8 +121,38 @@
 							<h2>Favourite Quote</h2>
 							<p class="quote">It doesn't matter how many people you know<br>All matters how many people know you!</p>
 						</header>
-						
+					<div>
 				</section>
+
+			<!-- form section -->
+			<section>
+				<div class="form-sec">
+					<h3>Your message to me!</h3>
+					<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="entry.604193914" id="nameField" value="" placeholder="Alias name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="text" name="entry.958220033" id="emailField" value="" placeholder="Email (optional)" />
+								</div>
+								<div class="12u$">
+									<textarea type="text" name="entry.549762741" id="textField" placeholder="Enter your message" rows="2"></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="send message" class="special" /></li>
+										
+									</ul>
+								</div>
+							</div>
+						</form>
+				</div>
+				</section>
+
+
+
+
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -138,11 +166,58 @@
 						<li><a href="https://www.linkedin.com/in/vishal-gorai-46ab49177/" class="icon fa-linkedin"></a></li>
 						<!-- <li><a href="#" class="icon fa-phone"></a></li> -->
 					</ul>
+
+
+					
 					<ul class="name">&copy managed by Vishal Gorai</ul>
 				</div>
 			</footer>
 
-		
+
+
+			<script>
+					function postToGoogle() {
+									var field1 = $("#nameField").val();
+									var field2 = $("#emailField").val();
+									var field3 = $("#textField").val();
+									 
+									if(field1 == ""){
+										alert('Please Fill Your name');
+										document.getElementById("nameField").focus();
+										return false;
+									}
+									if(field3 == ""){
+										alert('Please put your message');
+										document.getElementById("textField").focus();
+										return false;
+									}
+									
+					
+					
+									
+						
+									$.ajax({
+			
+									   
+										url: "https://docs.google.com/forms/d/1ObG_UVyNhMhScqAB-fJ9clbFZj6cOvrDA2X5GhMufdM/formResponse?",
+										data: {"entry.604193914": field1, "entry.958220033": field2, "entry.549762741": field3},
+										type: "POST",
+										dataType: "xml",
+										success: function(d)
+										{
+
+										},
+										error: function(x, y, z)
+											{
+												$('.form-sec').hide();
+												alert('Thanks for your feedback!');
+												
+											}
+									});
+									return false;
+								}
+					</script>
+
 
 	</body>
 </html>
