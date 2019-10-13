@@ -2787,7 +2787,7 @@
 
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/1.jpg");
+		background-image: url("images/overlay.png"), url("../../images/poster.jpg");
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
@@ -3025,5 +3025,3 @@
 			border-radius: 100%;
 		}
 
-
-		/* <img src="../../images/mypic1.jpg" alt=""> */
