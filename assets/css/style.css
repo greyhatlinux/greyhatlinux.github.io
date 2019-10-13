@@ -2783,17 +2783,7 @@
 	}
 
 	#banner {
-		/* padding: 16em 0 13em 0;
-		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/1.jpg");
-		background-position: center top;
-		background-size: cover;
-		line-height: 1.75;
-		text-shadow: 1px 1px 15px black;
-		text-align: center;
-		transform: rotateY(10deg);
-		margin-top: -10px; */
-		/* margin-right: -10px; */
+
 
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
