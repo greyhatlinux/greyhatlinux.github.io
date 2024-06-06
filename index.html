@@ -1,230 +1,405 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VG Homepage</title>
+    <link rel="icon" href="./assets/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vishal Gorai</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a><button class="nightModeToggle"> Night Node </button></a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vishal Gorai</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="pro-pic" src="./assets/pro-pic.png" alt="Vishal Gorai profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p2">Developer</p>
+        <h1 class="title">Vishal Gorai</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/greyhatlinux/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/greyhatlinux/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B. Tech </br> Birla Institute Of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A tech enthusiast, in love with tools and softwares improving human lives. In love with open-source technologies, catering to human needs. Experience working in SpringBoot, Kafka environments and building integration tools in the backend. Always open for code and travel, and food
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technology Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SpringBoot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kafka    </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Database</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MERN Stack</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Goldengate</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/greyhatlinux'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vishalgorai09@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/greyhatlinux">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Vishal Gorai</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 
-<html>
-	<head>
-		<title>Vishal Gorai</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="shortcut icon" type="icon/jpg" href="images/icon.jpg">
+    <script>
+      var typed =  new Typed(".section__text__p2", {
+          strings:["Writer", "Thinker", "Builder", "Coder", "Hacker"],
+          typeSpeed:60,
+          backSpeed:60,
+          loop:true,
+          showCursor: false,
+          shuffle: true
+      });
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	</head>
+      // const bodyElement = document.body;
 
+      // const toggleButton = document.getElementById('nightModeToggle');
+      // toggleButton.addEventListener('click', function(){
+      //   bodyElement.classList.toggle('night-mode');
+      //   if(bodyElement.classList.contains('night-mode')){
+      //     toggleButton.textContent = 'Night Mode (ON)'
+      //   }
+      //   else {
+      //     toggleButton.textContent = 'Night Mode (OFF)'
+      //   }
+      // });
 
-
-	<body class="landing">
-
-		<!-- Header -->
-			
-			<!-- <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> -->
-
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Vishal Gorai</h2>
-				<p class="desig">Student</p>
-				<hr>
-				<p class="institute">BIRLA INSTITUTE OF TECHNOLOGY, MESRA</p>
-				<ul class="actions">
-				</ul>
-			</section>
-
-			<!-- Fisrt -->
-				<section id="one" class="wrapper style1">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-										<div class="image rounded propic"><img src="images/pro.jpg" alt="" /></div>
-										<h2>A Brief Introduction</h2>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<p>Born and brought up in Bokaro Steel City, a small town gentleman carrying lots of aspirations and dreams. Raised in a simple society I rarely had the chance to behold the technological advancements. Fortunately, internet came to the rescue, and opened the doors to knowledge and the sheer amount of possibilities around the globe.
-								</p>
-								<p>The way the the world is witnessing an unprecedented growth in technology and digital infrastructure is really appreciable.Amid this fast paced world, I envision a secure and well structured digital environmnet, where one can be absolutely sure of where and how his data is flowings.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			
-			<!-- second -->
-				<section id="three" class="wrapper style2">
-					<div class="container">
-						<header class="major special">
-							<h2>About</h2>
-							<p class="byline">All about me which you ever wanted to know</p>
-						</header>
-						<div class="feature-grid">
-
-								<div class="feature">
-										<div class="image rounded"><img src="images/hobbies.png" alt="" /></div>
-										<div class="content">
-											<header>
-												<h3>My Hobbies</h3>
-												
-											</header>
-											<b>
-													<p>I love travelling, partying and going on vacation trips. Web Surfing takes up most of my leisure. I love public speaking and networking with people. I am a legitimate badminton player!<br />I love a busy life!.</p>
-											</b>
-										</div>
-								</div>
-
-
-							<div class="feature">
-								<div class="image rounded"><img src="images/edu.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h3>Education</h3>
-										
-									</header>
-									<p><b>AISCE : <a href="https://pasbokaro.com/">The Pentecostal Assembly School</a>, Bokaro Steel City, Jharkhand<br />
-									Graduation : Currently pursuing B.Tech in Electronics and Communication Engineering from <a href="https://www.bitmesra.ac.in/">BIT Mesra.</a></b></p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="image rounded"><img src="images/skills1.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h3>Skills</h3>
-										
-									</header>
-									<b>
-											<li>Web Development</li>
-											<li>Embedded Electronics</li>
-											<li>Coding in Python and Bash</li>
-											<li>Networking and Cyber Security</li>
-
-									</b>
-								</div>
-							</div>
-							
-							<div class="feature">
-								<div class="image rounded"><img src="images/contact.png" alt="" /></div>
-								<div class="content">
-									<header>
-										<h3>Contact</h3>
-										
-									</header>
-									<b>
-											<p>You can reach me from anywhere for collaborative works, teamming up for projects or for assistance. <br />Emai id : vishalgorai93@gmail.com<br />WhatsApp : 9973922722</p>
-									</b>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Elegant -->
-				<section id="four" class="wrapper style3 special">
-					<div class="container">
-						<header class="major">
-							<h2>Favourite Quote</h2>
-							<p class="quote">Love what you do, or Do what you love<br>There's no third option</p>
-						</header>
-					<div>
-				</section>
-
-			<!-- form section -->
-			<section>
-				<div class="form-sec">
-					<h3>Your message to me!</h3>
-					<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input type="text" name="entry.604193914" id="nameField" value="" placeholder="Alias name" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input type="text" name="entry.958220033" id="emailField" value="" placeholder="Email (optional)" />
-								</div>
-								<div class="12u$">
-									<textarea type="text" name="entry.549762741" id="textField" placeholder="Enter your message" rows="2"></textarea>
-								</div>
-								<div class="12u$">
-									<ul class="actions">
-										<li><input type="submit" value="Send message" class="special" /></li>
-										
-									</ul>
-								</div>
-							</div>
-						</form>
-				</div>
-				</section>
-
-
-
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<div class="connect"><h2>Social Connect</h2></div>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/vishalgorai.dev" class="icon fa-facebook"></a></li>
-						<li><a href="https://twitter.com/greyhatlinux" class="icon fa-twitter"></a></li>
-						<li><a href="https://www.instagram.com/_vishalgorai_/" class="icon fa-instagram"></a></li>
-						<li><a href="https://github.com/greyhatlinux" class="icon fa-github"></a></li>
-						<li><a href="https://www.linkedin.com/in/greyhatlinux/" class="icon fa-linkedin"></a></li>
-						<li><a href="https://medium.com/@greyhatlinux" class="icon fa-medium"></a></li>
-					</ul>
-
-
-					
-					<ul class="name">&copy managed by Vishal Gorai</ul>
-				</div>
-			</footer>
-
-
-
-			<script>
-
-				
-
-
-						function postToGoogle() {
-									var field1 = $("#nameField").val();
-									var field2 = $("#emailField").val();
-									var field3 = $("#textField").val();
-									 
-									if(field1 == ""){
-										alert('Please Fill Your name');
-										document.getElementById("nameField").focus();
-										return false;
-									}
-									if(field3 == ""){
-										alert('Please put your message');
-										document.getElementById("textField").focus();
-										return false;
-									}
-									
-					
-					
-									
-						
-									$.ajax({
-			
-									   
-										url: "https://docs.google.com/forms/d/1ObG_UVyNhMhScqAB-fJ9clbFZj6cOvrDA2X5GhMufdM/formResponse?",
-										data: {"entry.604193914": field1, "entry.958220033": field2, "entry.549762741": field3},
-										type: "POST",
-										dataType: "xml",
-										success: function(d)
-										{
-
-										},
-										error: function(x, y, z)
-											{
-												$('.form-sec').hide();
-												alert('Thanks for your feedback!');
-												
-											}
-									});
-									return false;
-								}
-					</script>
-
-
-	</body>
+    </script>
+  </body>
 </html>
