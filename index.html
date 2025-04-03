@@ -44,7 +44,7 @@
           <img class="pro-pic" src="./assets/pro-pic.png" alt="Vishal Gorai profile picture" />
         </div>
         <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
+          <p class="section__text__p1">Hello, I'm a</p>
           <p class="section__text__p2">Developer</p>
           <h1 class="title">Vishal Gorai</h1>
           <div class="btn-container">
@@ -254,6 +254,64 @@
           onclick="location.href='./#projects'"
         />
       </section>
+
+      <section id="experience-timeline">
+        <p class="section__text__p1">Professional Career</p>
+        <h1 class="title">Timeline</h1>
+        <div class="experience-details-container">
+          <div class="timeline-container">
+            <ul class="timeline-list">
+              <!-- Timeline Item 1 -->
+              <li class="timeline-item">
+                <div class="timeline-content left">
+                  <h3>Fastenal India </h3>
+                  <h4>Software Developer</h4>
+                  <h5>[June 2022 - Present]</h5>
+                  <p class="timeline-content-desc">
+                    Working for the company's digital infrastructure
+                    Managing and scaling Kafka nodes and cluster. 
+                    Building and managing data platforms for the company to cater to all types of data needs. 
+                  </p> 
+                </div>
+              </li>
+              
+              <!-- Timeline Item 2 -->
+              <li class="timeline-item">
+                <div class="timeline-content right">
+                  <h3>Fastenal India </h3>
+                  <h4>Software Intern</h4>
+                  <h5>[Jan 2022 - June 2022]</h5>
+                  <p class="timeline-content-desc">
+                    Worked with different teams and learnt team collaboration. Used and explored tools like Jira, Bitbucket, Confluence, and Kafka, along with many Databases.  
+                  </p>
+                </div>
+              </li>
+              
+              <!-- Timeline Item 3 -->
+              <li class="timeline-item">
+                <div class="timeline-content left">
+                  <h3>TeqForce Solutions</h3>
+                  <h4>Software Intern</h4>
+                  <h5>[July 2020 - August 2020]</h5>
+                  <p class="timeline-content-desc">
+                    Led security debugging for a client’s website, identifying and resolving 8 critical and 15 medium-priority vulnerabilities, significantly enhancing application security and stability
+                  </p>
+                </div>
+              </li>
+  
+              <!-- Add more items following same pattern -->
+            </ul>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+
       <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -340,6 +398,7 @@
           onclick="location.href='./#contact'"
         />
       </section>
+      
       <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -383,8 +442,8 @@
     <script>
       var typed =  new Typed(".section__text__p2", {
           strings:["Writer", "Thinker", "Builder", "Coder", "Hacker"],
-          typeSpeed:60,
-          backSpeed:60,
+          typeSpeed:70,
+          backSpeed:70,
           loop:true,
           showCursor: false,
           shuffle: true

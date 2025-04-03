@@ -285,6 +285,108 @@ section {
   width: 10vh;
 }
 
+
+/* timeline section */
+
+#experience-timeline {
+  position: relative;
+}
+
+.timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: #00bcd4;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline-content {
+  width: 40%;
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 2vh auto;
+}
+.timeline-content-desc {
+  margin: 2vh auto;
+}
+
+/* Desktop Alternating Layout */
+.timeline-content.left {
+  margin-left: 15%;
+  float: left;
+  text-align: right;
+}
+
+.timeline-content.right {
+  margin-right: 15%;
+  float: right;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: #00bcd4;
+}
+
+/* Timeline Dots -- removed */
+
+.timeline-content.left::before {
+  right: -56px;
+}
+
+.timeline-content.right::before {
+  left: -56px;
+}
+
+/* Mobile Responsive Layout */
+@media (max-width: 768px) {
+  .timeline-container::before {
+    display: none; /* Remove vertical line on mobile */
+  }
+
+  .timeline-content {
+    width: auto;
+    float: none;
+    margin: 0 0 30px 60px !important;
+    text-align: left !important;
+
+  }
+
+  .timeline-content::before {
+    left: -40px !important;
+    right: auto !important;
+  }
+}
+
+
+/* timeline section ends */
+
 /* ICONS */
 
 .icon {
