@@ -1,15 +1,69 @@
-/* GENERAL */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
 
 * {
   margin: 0;
   padding: 0;
 }
 
+
+
+/* Universe Background */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it stays behind all content */
+  background: radial-gradient(circle at center, #000000, #1a1a1a, #000000);
+  overflow: hidden;
+}
+
+/* Stars Animation */
+.universe-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, #ffffff 2px, transparent 3px);
+  background-size: 50px 50px; /* Size of stars */
+  animation: moveStars 10s linear infinite; /* Continuous inward movement */
+}
+
+/* Keyframes for Star Movement */
+@keyframes moveStars {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  to {
+    transform: scale(0.5); /* Stars move inward */
+    opacity: 0.8; /* Slight fade-out effect */
+    filter: blur(2px); /* Adds depth */
+  }
+}
+
+
+/* animation ends */
+
+
+/* Typography and Colors */
 body {
-  font-family: 'Courier New', 'Courier', monospace;
+  font-family: 'Inter', sans-serif;
   font-size: large;
+  background-color: #000000; /* Dark theme background */
+  color: #ffffff; /* Light text for contrast */
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #00bcd4; /* Accent color for headings */
+}
+
+p {
+  color: #b3b3b3; /* Softer text color for readability */
 }
 
 body.night-mode{
@@ -21,9 +75,9 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+/* p {
   color: rgb(85, 85, 85);
-}
+} */
 
 /* TRANSITION */
 
@@ -52,13 +106,13 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color:#00bcd4;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -95,7 +149,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #00bcd4;
   transition: all 0.3 ease-in-out;
 }
 
@@ -103,7 +157,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #00bcd4;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -115,7 +169,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(0, 0, 0); /* This color is for hamburger list items*/
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -218,11 +272,26 @@ section {
   gap: 1rem;
 }
 
+.profile-upper-container {
+  display: flexbox;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #00bcd4;
+  width: 10vh;
+}
+
 /* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
+  color: #ffffff;
+
 }
 
 /* BUTTONS */
@@ -239,11 +308,12 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: #00bcd4;
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -399,6 +469,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  padding: 10vh;
 }
 
 .contact-info-upper-container {
@@ -410,6 +481,7 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+  background-color: #00bcd4;
 }
 
 .contact-info-container {
@@ -418,6 +490,7 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  
 }
 
 .contact-info-container p {
@@ -437,8 +510,10 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  /* background-color: grey; */
 }
 
 footer p {
   text-align: center;
+  color: white;
 }
