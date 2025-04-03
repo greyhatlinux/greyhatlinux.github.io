@@ -128,15 +128,19 @@ a:hover {
 
 /* HAMBURGER MENU */
 
+
+/* Hide the hamburger menu by default */
 #hamburger-nav {
   display: none;
 }
 
+/* Hamburger Menu Container */
 .hamburger-menu {
   position: relative;
   display: inline-block;
 }
 
+/* Hamburger Icon Styling */
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -150,61 +154,66 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: #00bcd4;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
+/* Full-Screen Menu Overlay */
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #00bcd4;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  position: fixed; /* Covers entire screen */
+  top: 0;
+  left: -100%; /* Initially hidden */
+  width: 100%;
+  height: 100%;
+  background-color: #171717ea; /* Background color for overlay */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  transition: all 0.4s ease-in-out; /* Smooth slide-in effect */
 }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: rgb(0, 0, 0); /* This color is for hamburger list items*/
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
+.menu-links ul {
+  list-style-type: none;
 }
 
 .menu-links li {
-  list-style: none;
+  margin-bottom: 20px; /* Spacing between menu items */
 }
 
+.menu-links a {
+  text-decoration: none;
+  font-size: 2rem; /* Larger font size for full-screen menu */
+  color: #ffffff; /* Text color for menu items */
+}
+
+/* Active Full-Screen Menu State */
 .menu-links.open {
-  max-height: 300px;
+  left: 0; /* Slide in to cover the screen */
 }
 
+/* Hamburger Icon Animation (Transform into 'X') */
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
+  opacity: 0; /* Hide middle bar */
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
+.close-btn {
+  background-color: #00bcd4; /* Red button for closing */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-top: 3vh;
 }
 
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
 
 /* SECTIONS */
 
