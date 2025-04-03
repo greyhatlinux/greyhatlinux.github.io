@@ -273,7 +273,7 @@ section {
 }
 
 .profile-upper-container {
-  display: flexbox;
+  display: flex;
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -283,6 +283,10 @@ section {
   padding: 0.5rem;
   background-color: #00bcd4;
   width: 10vh;
+}
+
+.profile-upper-container-item {
+  margin: 0.5vh;
 }
 
 
@@ -373,9 +377,8 @@ section {
   .timeline-content {
     width: auto;
     float: none;
-    margin: 0 0 30px 60px !important;
+    margin: 5 5 0px 0px !important;
     text-align: left !important;
-
   }
 
   .timeline-content::before {
@@ -574,8 +577,9 @@ article .icon {
   padding: 10vh;
 }
 
-.contact-info-upper-container {
-  display: flex;
+
+.contact-upper-container {
+  display: inherit;
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -584,6 +588,11 @@ article .icon {
   margin: 2rem auto;
   padding: 0.5rem;
   background-color: #00bcd4;
+  width: 10vh;
+}
+
+.contact-upper-container-item {
+  margin: 0.5vh;
 }
 
 .contact-info-container {
