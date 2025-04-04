@@ -188,6 +188,13 @@ a:hover {
   color: #ffffff; /* Text color for menu items */
 }
 
+.menu-links li:hover {
+  color:#00bcd4;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
 /* Active Full-Screen Menu State */
 .menu-links.open {
   left: 0; /* Slide in to cover the screen */
