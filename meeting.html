@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VG Meetings</title>
+    <link rel="icon" href="./assets/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">vishalgorai</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#experience-timeline">Career</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">vishalgorai</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="index.html#experience-timeline" onclick="toggleMenu()">Career</a></li>
+              <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+              <li><button class="close-btn" onclick="toggleMenu()">Close</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="scheduling" class="calendar-section">
+        <p class="section__text__p1">Let's catch up!</p>
+        <h1 class="title">My Calendar</h1>
+        <div class="">
+
+            <!--  -->
+
+        <div class="calendly-inline-widget" data-url="https://calendly.com/vishalgorai93/30min?hide_gdpr_banner=1" 
+            style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+        </div>
+      </section>
+
+    <footer>
+    <nav>
+        <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience-timeline">Career</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <p>&#169 2025 | Vishal Gorai</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+</body>
+</html>

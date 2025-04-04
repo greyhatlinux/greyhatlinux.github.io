@@ -55,6 +55,7 @@ body {
   font-size: large;
   background-color: #000000; /* Dark theme background */
   color: #ffffff; /* Light text for contrast */
+  width: 90% auto;
 }
 
 h1, h2, h3 {
@@ -169,6 +170,7 @@ a:hover {
   flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
+  z-index: 9999;
   transition: all 0.4s ease-in-out; /* Smooth slide-in effect */
 }
 
@@ -221,7 +223,8 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  width: 80% auto;
+  margin: 0rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -458,6 +461,17 @@ section {
   gap: 1rem;
 }
 
+.btn-3 {
+  font-weight: 800;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  color: #000000;
+  background-color: #ffffff;
+  width: 20vh;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -625,6 +639,59 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* Calendar settings */
+
+.calendar-section {
+  padding: 2rem;
+  background: #1a1a1a;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.calendar-container {
+  position: relative;
+  padding-bottom: 25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+.google-cal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: invert(0.9) hue-rotate(180deg) contrast(120%); /* Dark theme conversion */
+}
+
+/* .privacy-note {
+  color: #b3b3b3;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+} */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .calendar-section {
+    padding: 1vh;
+    margin: 1vh;
+  }
+  
+  .google-cal {
+    filter: invert(0.85) hue-rotate(180deg); /* Adjust for mobile visibility */
+  }
+}
+
+
+
+/* Calendar ends */
+
 
 /* FOOTER SECTION */
 

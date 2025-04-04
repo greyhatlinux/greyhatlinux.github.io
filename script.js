@@ -8,8 +8,10 @@ function toggleMenu() {
 
   if (menu.classList.contains('open')) {
       body.style.overflow = 'hidden'; 
+      body.classList.add('menu-open'); 
   } else {
       body.style.overflow = '';
+      body.classList.remove('menu-open'); 
   }
 
 }
