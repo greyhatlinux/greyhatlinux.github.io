@@ -479,6 +479,12 @@ section {
   width: 20vh;
 }
 
+.medium-profile {
+  align-items: center;
+  justify-items: center;
+  
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -679,6 +685,16 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+/* contact-2 for medium link  */
+
+#contact-2 {
+  display: flexbox;
+  justify-content: center;
+  flex-direction: column;
+  height: 10vh;
+  padding: 5vh;
 }
 
 /* Calendar settings */
