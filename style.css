@@ -621,11 +621,15 @@ article .icon {
   }
 }
 
-
-
 .project-btn {
-  color: black;
+  color: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
+  background-color: #1a1a1a;
+}
+
+.project-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;;
 }
 
 /* CONTACT */
