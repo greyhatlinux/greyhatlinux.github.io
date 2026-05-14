@@ -1,0 +1,4 @@
+# Ignore files from committing 
+
+*.vscode
+*.DS_Store

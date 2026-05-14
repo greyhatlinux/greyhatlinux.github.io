@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VG Homepage</title>
+    <link rel="icon" href="./assets/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+      <nav id="desktop-nav">
+        <div class="logo">vishalgorai</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience-timeline">Career</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">vishalgorai</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#experience-timeline" onclick="toggleMenu()">Career</a></li>
+              <li><a href="blogs.html" onclick="toggleMenu()">Blogs</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              <li><button class="close-btn" onclick="toggleMenu()">Close</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img class="pro-pic" src="./assets/pro-pic.png" alt="Vishal Gorai profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm a</p>
+          <p class="section__text__p2">Developer</p>
+          <h1 class="title">Vishal Gorai</h1>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/vishal-gorai-resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div class="profile-upper-container">
+            <div class="profile-upper-container-item">
+              <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/greyhatlinux/'"
+            />
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/image.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>3+ years <br />Software Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B. Tech </br> Birla Institute Of Technology, Mesra</p>
+              </div>
+            </div>
+            <div class="text-container">
+                <p> A Software Engineer with a strong foundation in building distributed and scalable systems and a growing passion for AI-powered applications. </p>
+            </br>
+                <p>Over the years, He's been deeply involved in designing and optimizing complex backend systems, working across Java, Python, and C++. His work has ranged from monolithic architectures to event-driven microservices using Kafka, always with a focus on performance, reliability, and developer productivity. He specializes in backend software development, big data technologies, microservices architecture, and test-driven development. He takes pride in crafting solutions that are not just functional, but elegant and future-proof.                    </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Professional Expertise</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Technology Stack</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Linux</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Docker</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SpringBoot</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Kafka    </h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Software Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Microservices</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Database</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MERN Stack</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Goldengate</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience-timeline'"
+        />
+      </section>
+
+      <section id="experience-timeline">
+        <p class="section__text__p1">Professional Career</p>
+        <h1 class="title">Timeline</h1>
+        <div class="experience-details-container">
+          <div class="timeline-container">
+            <ul class="timeline-list">
+              <!-- Timeline Item 0 -->  
+              <li class="timeline-item">
+                <div class="timeline-content left">
+                  <h3>Tata CliQ Fashion </h3>
+                  <h4>Software Development Engineer 2</h4>
+                  <h5>[May 2025 - Present]</h5>
+                  <p class="timeline-content-desc">
+                    Working on revamping the legacy Java codebase |
+                    Optimising the application to make systems and processes efficient and fast
+                  </p> 
+                </div>
+              </li>
+
+
+              <!-- Timeline Item 1 -->
+              <li class="timeline-item">
+                <div class="timeline-content right">
+                  <h3>Fastenal India </h3>
+                  <h4>Software Developer</h4>
+                  <h5>[June 2022 - Apr 2025]</h5>
+                  <p class="timeline-content-desc">
+                    Worked for the company's digital infrastructure |
+                    Managed and scaled Kafka nodes and cluster |
+                    Built and managed data platforms for the company to cater to all types of data needs |
+                    Worked on Python Framework for the End-to-End Testing of Event Platform
+                  </p> 
+                </div>
+              </li>
+              
+              <!-- Timeline Item 2 -->
+              <li class="timeline-item">
+                <div class="timeline-content left">
+                  <h3>Fastenal India </h3>
+                  <h4>Software Intern</h4>
+                  <h5>[Jan 2022 - June 2022]</h5>
+                  <p class="timeline-content-desc">
+                    Worked with different teams and learnt team collaboration | Used and explored tools like Jira, Bitbucket, Confluence, and Kafka, along with many Databases.  
+                  </p>
+                </div>
+              </li>
+              
+              <!-- Timeline Item 3 -->
+              <li class="timeline-item">
+                <div class="timeline-content right">
+                  <h3>TeqForce Solutions</h3>
+                  <h4>Software Intern</h4>
+                  <h5>[July 2020 - August 2020]</h5>
+                  <p class="timeline-content-desc">
+                    Led security debugging for a client’s website, identifying and resolving 8 critical and 15 medium-priority vulnerabilities, significantly enhancing application security and stability
+                  </p>
+                </div>
+              </li>
+  
+              <!-- Add more items following same pattern -->
+            </ul>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contacts</h1>
+
+        <div class="btn-container">
+          <button
+          class="btn btn-color-2"
+          onclick="window.location.href='mailto:vishalgorai09@gmail.com';">
+          Email
+        </button>
+        <button class="btn btn-color-2 btn-3" onclick="location.href='meeting.html'">
+          Schedule a meeting
+        </button>
+        
+        <a href="https://linkedin.com/in/greyhatlinux" target="_blank">
+          <button class="btn btn-color-2">
+            LinkedIn
+          </button>
+        </a>
+        </div>
+
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#experience-timeline">Career</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>&#169 2025 | Vishal Gorai</p>
+      </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <script>
+      var typed =  new Typed(".section__text__p2", {
+          strings:["Writer", "Thinker", "Builder", "Coder", "Hacker"],
+          typeSpeed:70,
+          backSpeed:70,
+          loop:true,
+          showCursor: false,
+          shuffle: true
+      });
+
+    </script>
+  </body>
+</html>
